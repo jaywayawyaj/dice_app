@@ -9,4 +9,13 @@ describe Dice do
     expect(dice.roll).to be_between(1, 6)
   end
 
+  # it "expects dice.roll to be a random selection" do
+  #   dice = Dice.new
+  #   expect(dice.roll).to be(:rand)
+  # end
+
+
+  it "expects to be able to roll multiple dice at once" do
+    allow(subject).to receive(:multiple_dice)
+  end
 end
